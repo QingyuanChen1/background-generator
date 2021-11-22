@@ -5,9 +5,16 @@
 const getRandomColorChannel = function(options=256) {
   return Math.floor( Math.random() * options )
 }
+let setNewColour = function(){
+  let x = 'rgb(' + getRandomColorChannel() + ','+ getRandomColorChannel() + ','+getRandomColorChannel() + ')';
+  document.getElementById('body').style.background = x;
+  document.getElementById('button1').style.background = x;
+  document.getElementById('rgbinfo').innerText= x;
+
+}
 
 // Here's a test number, check the console to see the result
-console.log( getRandomColorChannel() )
+
 
 
 

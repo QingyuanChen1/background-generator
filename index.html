@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <title>Random Background</title>
     <meta name="description" content="Click to randomize a background colour">
-    <meta name="author" content="[Your name here]">
+    <meta name="author" content="Qingyuan Chen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"><!-- you may remove this -->
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-
+  <body id="body">
+    <button onclick="setNewColour()" id="button1">NEW BACKGROUND</button>
     <!--
       Build a "static prototype" interface for the application using only HTML &
       CSS, such that the document's user-facing output looks something like this:
@@ -22,7 +21,7 @@
 
            rgb(###, ###, ###)
     -->
-
+    <p id="rgbinfo"></p>
     <script src="js/script.js"></script>
   </body>
 </html>
