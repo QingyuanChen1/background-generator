@@ -7,9 +7,21 @@ const getRandomColorChannel = function(options=256) {
 }
 let setNewColour = function(){
   let x = 'rgb(' + getRandomColorChannel() + ','+ getRandomColorChannel() + ','+getRandomColorChannel() + ')';
-  document.getElementById('body').style.background = x;
-  document.getElementById('button1').style.background = x;
-  document.getElementById('rgbinfo').innerText= x;
+  let button = document.getElementById('button1');
+  let handleClick = function(){
+    button.style.backgroundColor = `black`;
+  }
+  let handleClick1 = function(){
+    button.style.backgroundColor = x;
+    document.getElementById('body').style.backgroundColor = x;
+    document.getElementById('rgbinfo').innerText= x;
+  }
+
+  button.addEventListener(`mousedown`,handleClick,false);
+  button.addEventListener(`mouseup`,handleClick1,false);
+
+
+
 
 }
 

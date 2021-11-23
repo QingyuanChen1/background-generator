@@ -5,8 +5,7 @@ body{
 
 
 button{
-    top: 50%;
-    left: 48%;
+    top: 410px;
     padding: 10px;
     position: absolute;
     background-color: white;
@@ -14,12 +13,15 @@ button{
 }
 
 button:active{
-    background: transparent;
+    color: white;
 }
 p{
+    width: 128px;
+    height: 21px;
+    text-align: center;
     position: absolute;
-    left: 49%;
-    top: 60%;
+    top: 490px;
+    left:50.5%;
     padding: 5px;
     background: rgba(255,255,255,0.3);
 
